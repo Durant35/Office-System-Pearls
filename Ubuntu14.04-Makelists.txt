@@ -1,0 +1,55 @@
+安装Vmware Tools：
+  链接：https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1022525
+
+  直接在驱动中解压到桌面或者其他，然后进入加压文件夹所在路径，在终端打开，
+    sudo ./vmware-install.pl -d
+  等待的时间可能会比较长，安装完成后，
+    sudo reboot
+  进入重启，生效！
+
+
+生成桌面快捷方式
+  durant35@tarantula7-B480:~/桌面$ sudo ln -s /mnt/hgfs/ShareFolder/ ./ShareFolder
+  注意因为包含中文路径造成的奇怪现象
+
+
+安装MATLAB_R2014A
+  1. 步入ISO所在路径，sudo mount MATHWORKS_R2014A.iso MATLAB_R2014A/ 挂载MATHWORKS_R2014A.iso到MATLAB_R2014A
+  2. cd MATLAB_R2014A/
+     sudo ./install 启动安装
+  3. 选择是否在线安装时，选否，即 install manually without using the internet
+     让输入key，输入 12313-94680-65562-90832
+     文件安装路径选择依照自己习惯，一般为：/usr/local/，这里我选择/home/durant35/apps/
+  4. 不使用Internet手动激活，使用：破解/Crack/license_405329_R2014a.lic文件
+     此外，将 破解/Crack/Linux/libmwservices.so 复制到 MATLAB/R2014a/bin/glnxa64/ （可能需要通过命令mv或者cp）
+  5. 步入  MATLAB/R2014a/bin， sudo ./matlab， 即可启动 MATLAB，说明成功安装并破解
+  6. 制作 MATLAB 快捷启动 (matlab-support)
+  	sudo apt-get install matlab-support	按照要求填写目录即可
+  	任意 Terminal下 键入命令：matlab 即可启动，如果报错，需要键入 sudo matlab
+  7. 更改 MATLAB 默认文件夹
+  	在 MATLAB 命令行键入 edit pathdef，在 pathdef.m 文件最末尾添加： cd 你要设置的默认目录 即可。
+  
+
+
+
+
+
+rmdir
+rm -rf dir/*
+
+卸载程序
+	sudo apt-get remove --purge xxx
+	
+解压 .tgz
+tar zxvf expo_dol-source.tgz -C /home/durant35/apps/tools/
+
+
+ 
+ 《64 bit Ubuntu Multiarch systems》
+ 		http://askubuntu.com/questions/133389/no-such-file-or-directory-but-the-file-exists
+ 		
+ 		
+
+
+
+

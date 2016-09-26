@@ -41,3 +41,6 @@ Install package:
 　　ln -s yy zz
 　　将档案 yy 产生一个 hard link : zz
 　　ln yy xx
+  
+8.  ubuntu使用翻墙XX-Net详细教程
+http://blog.csdn.net/u012336923/article/details/48264789

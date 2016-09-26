@@ -18,7 +18,6 @@
   sudo add-apt-repository ppa:damien-moore/codeblocks-stable
   sudo apt-get update
  4.2 sudo apt-get install codeblocks
- 4.3 sudo apt-get install codeblocks-contrib
 
 5. Capturer
  vokoscreen
